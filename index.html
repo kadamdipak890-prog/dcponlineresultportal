@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MADHWAI JUNIOR COLLEGE OF SCIENCE - Online Result Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>MADHWAI JUNIOR COLLEGE OF SCIENCE</h1>
+    <h2>DCP CLASS ONLINE RESULT PORTAL</h2>
+  </header>
+
+  <section class="selector">
+    <label for="classSelect">Select Class:</label>
+    <select id="classSelect">
+      <option value="11th">11th</option>
+      <option value="12th">12th</option>
+    </select>
+  </section>
+
+  <section class="search-box">
+    <input type="text" id="seatInput" placeholder="Enter Seat Number (e.g. D001)">
+    <button onclick="showResult()">Show Result</button>
+  </section>
+
+  <section id="result-section" class="hidden">
+    <div class="student-info">
+      <p><strong>Name:</strong> <span id="studentName"></span></p>
+      <p><strong>Class:</strong> <span id="studentClass"></span></p>
+      <p><strong>Roll No:</strong> <span id="studentRoll"></span></p>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Physics</th>
+          <th>Obtained Marks</th>
+          <th>Total Marks</th>
+          <th>Percentage</th>
+          <th>Rank</th>
+        </tr>
+      </thead>
+      <tbody id="resultTable"></tbody>
+    </table>
+  </section>
+
+  <footer>
+    <p id="result-published"></p>
+  </footer>
+
+  <div class="watermark">MADHWAI JUNIOR COLLEGE OF SCIENCE</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
